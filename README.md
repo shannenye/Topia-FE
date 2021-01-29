@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# Topia Frontend Coding Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Premise
 
-## Available Scripts
+Topia is a combination of several front-end technologies. There is a graphical canvas, a user interface and a streaming system. All 3 interact to deliver a unique experience.
 
-In the project directory, you can run:
+This test is designed to touch on the elements of all 3.
 
-### `yarn start`
+While topia runs on a user’s computer, peer avatars are added or removed from the canvas depending on whether or not the peer avatar falls within the range of the user’s viewport. A user’s screen height and width determine how much of the Topia a user can see centered on their own avatar.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+In this test, you will rewrite the central algo that runs in Topia to maintain which peer avatars are on canvas and which ones are not.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+You will wrap the results of this algorithm in a user interface of your own design.
 
-### `yarn test`
+- At the root level of this project, in `App.js`, you are expected to present two fields of numeric input and a button. One for an X position, another for a Y position and a button named `User List`.
+- The default values for the fields should be `x = 800; y = 400`
+- Pressing this button will launch a modal that will display a list of users that are on the visible screen centered on `x, y`
+- The list of users can be found in `/src/utils/constants.js`
+- Upon opening the modal, run a utility located in `/src/utils/listUsersInView.js` called `listUsersInView`. This function should return an array of the users in view. `more details about the functionality of this utility are below`
+- From this array, list the users in a table, sorted by distance to the center `x,y`
+- Columns for the table should be: username, distance, and a visual indication whether this user is a broadcaster or not. For this, there is a field called `is_broadcaster` in the user object.
+- closing the modal should bring you back to our input fields and button which we can change to alter the list in the modal. We should also be able to alter the screen size to change the arguments to `listUsersInView`
+- For purposes of this test and for use in `listUsersInView` assume the avatar height and width for each user is `height = 125px` and `width = 50px` and that the position of each user is the center point of the avatar
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### User List Functionality
 
-### `yarn build`
+Your task is to complete the function `listUsersInView`. It has 5 arguments:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- `users` - a map of users to search through. Each user is indexed by the user’s ID. Each object of the indexed user contains an x, y, width and height.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- `positionX`, `positionY` - The X and Y coordinate of the user’s own avatar
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- `screenWidth`, `screenHeight` - The width and height of the user’s screen
 
-### `yarn eject`
+You are to use these arguments to determine whether or not a peer avatar in `users` is indeed in the user’s viewport of `screenWidth` width and `screenHeight` height centered at `positionX` and `positionY`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+For each peer avatar that appears in the viewport, add the ID of that user to the array `usersInView` which is currently declared and empty at the top of the function `listUsersInView`.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### How to complete
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Please submit this completed project to a new github repo. We can coordinate our own use and download of the completed code when you let us know you’re done!
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+To run this repository, run: `npm start` from the project directory at your terminal and test your progress at `http://localhost:3000/`. Please ensure `node` and `npm` are installed on your computer
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+##### Happy Coding!
