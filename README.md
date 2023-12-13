@@ -2,17 +2,17 @@
 
 ### Premise
 
-Topia is a combination of several front-end technologies. There is a graphical canvas, a user interface and a streaming system. All 3 interact to deliver a unique experience.
+Topia is a combination of several front-end technologies. There is a graphical canvas, a user interface, and a streaming system. All 3 interact to deliver a unique experience.
 
 This test is designed to touch on the elements of all 3.
 
 While topia runs on a user’s computer, peer avatars are added or removed from the canvas depending on whether or not the peer avatar falls within the range of the user’s viewport. A user’s screen height and width determine how much of the Topia a user can see centered on their own avatar.
 
-In this test, you will rewrite the central algo that runs in Topia to maintain which peer avatars are on canvas and which ones are not.
+In this test, you will rewrite the central algorithm that runs in Topia to maintain which peer avatars are on canvas and which ones are not.
 
 You will wrap the results of this algorithm in a user interface of your own design.
 
-- At the root level of this project, in `App.js`, you are expected to present  a button named `User List`.
+- At the root level of this project, in `App.js`, you are expected to present a button named `User List`.
 - Pressing this button will launch a modal that will display a list of users that are on the visible screen centered on `x, y`
 - The default values for the fields should be `x = 800; y = 400`
 - `x, y` (the user’s current position) should be editable in the modal and as it changes it should update the results of the list.
@@ -20,7 +20,7 @@ You will wrap the results of this algorithm in a user interface of your own desi
 - Upon opening the modal and when current position and screen size update state, run a utility located in `/src/utils/listUsersInView.js` called `listUsersInView`. This function should return an array of the users in view. `more details about the functionality of this utility are below`
 - From this array, list the users in a table, sorted by distance to the center `x,y`
 - Columns for the table should be: username, distance, and a visual indication whether this user is a broadcaster or not. For this, there is a field called `is_broadcaster` in the user object.
-- closing the modal should bring you back to our input fields and button which we can change to alter the list in the modal. We should also be able to alter the screen size to change the arguments to `listUsersInView`
+- Closing the modal should bring you back to our input fields and button which we can change to alter the list in the modal. We should also be able to alter the screen size to change the arguments to `listUsersInView`
 - For purposes of this test and for use in `listUsersInView` assume the avatar height and width for each user is `height = 125px` and `width = 50px` and that the position of each user is the center point of the avatar
 
 ### User List Functionality
