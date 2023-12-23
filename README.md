@@ -45,7 +45,7 @@ To run this repository, run: `npm start` from the project directory at your term
 
 ##### Happy Coding!
 
------ ### Shannen's Section
+### Shannen's Section
 
 #### Notes
 - The entire browser is responsive and should look the same across Chrome, Firefox, and Safari. Screen width and height can be adjusted to mobile as well, give it a try and take a look at the table and modal in different formats!
@@ -53,15 +53,15 @@ To run this repository, run: `npm start` from the project directory at your term
 - A 'shared' file has been created to store micro components that can be re-used. This is to simulate a component library in a real development setting.
 
 #### Checklist
-[x] Create a button that opens a modal
-[x] The modal must contain 2 inputs each for position and screen size
-[x] The inputs must contain numbers and are required fields
-[x] Defaults for position are x = 800 and y = 400
-[x] Defaults for screen width and height are the current window size
-[x] Submitting the modal should update the user list table with new values according to the new inputs
-[x] Create a table with header fields: username, distance, and broadcaster
-[x] Users in the table must be sorted according to closest distance
-[x] Add input contraints for fields to only be numbers
+- [x] Create a button that opens a modal
+- [x] The modal must contain 2 inputs each for position and screen size
+- [x] The inputs must contain numbers and are required fields
+- [x] Defaults for position are x = 800 and y = 400
+- [x] Defaults for screen width and height are the current window size
+- [x] Submitting the modal should update the user list table with new values according to the new inputs
+- [x] Create a table with header fields: username, distance, and broadcaster
+- [x] Users in the table must be sorted according to closest distance
+- [x] Add input contraints for fields to only be numbers
  
 #### Testing
 - Tests have been added for all functions
