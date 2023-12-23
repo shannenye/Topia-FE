@@ -62,6 +62,18 @@ To run this repository, run: `npm start` from the project directory at your term
 - [x] Create a table with header fields: username, distance, and broadcaster
 - [x] Users in the table must be sorted according to closest distance
 - [x] Add input contraints for fields to only be numbers
+- [x] Add red borders around inputs to alert users that they left a required field empty
  
 #### Testing
-- Tests have been added for all functions
+Tests have been added for all functions
+
+<img width="343" alt="Screen Shot 2023-12-23 at 4 12 26 PM" src="https://github.com/shannenye/Topia-FE/assets/30578065/61576706-5097-465d-b4a0-d07ac00275dc">
+
+#### Modal View
+<img width="482" alt="Screen Shot 2023-12-23 at 4 30 39 PM" src="https://github.com/shannenye/Topia-FE/assets/30578065/7fbb92a1-d4cc-428b-b5e8-e1968723f492">
+
+#### Table for User List View
+<img width="948" alt="Screen Shot 2023-12-23 at 4 31 58 PM" src="https://github.com/shannenye/Topia-FE/assets/30578065/f8e47595-7801-437d-a363-e7712ca2525e">
+
+
+
