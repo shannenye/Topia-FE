@@ -1,0 +1,8 @@
+.table {
+  width: 70%;
+  min-width: 350px;
+  background-color: var(--topia-purple);
+  padding: 30px 30px 20px;
+  border-radius: 33px;
+  margin: 20px auto;
+}

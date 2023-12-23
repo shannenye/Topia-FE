@@ -44,3 +44,24 @@ Please submit this completed project to a new github repo. We can coordinate our
 To run this repository, run: `npm start` from the project directory at your terminal and test your progress at `http://localhost:3000/`. Please ensure `node` and `npm` are installed on your computer
 
 ##### Happy Coding!
+
+----- ### Shannen's Section
+
+#### Notes
+- The entire browser is responsive and should look the same across Chrome, Firefox, and Safari. Screen width and height can be adjusted to mobile as well, give it a try and take a look at the table and modal in different formats!
+- All of the colors in this project have been taken directly from https://topia.io/ and saved as root variables so they can be reused and accessed from anywhere in the project. Button, hover, and table styles have also been taken from Topia for consistency
+- A 'shared' file has been created to store micro components that can be re-used. This is to simulate a component library in a real development setting.
+
+#### Checklist
+[x] Create a button that opens a modal
+[x] The modal must contain 2 inputs each for position and screen size
+[x] The inputs must contain numbers and are required fields
+[x] Defaults for position are x = 800 and y = 400
+[x] Defaults for screen width and height are the current window size
+[x] Submitting the modal should update the user list table with new values according to the new inputs
+[x] Create a table with header fields: username, distance, and broadcaster
+[x] Users in the table must be sorted according to closest distance
+[x] Add input contraints for fields to only be numbers
+ 
+#### Testing
+- Tests have been added for all functions

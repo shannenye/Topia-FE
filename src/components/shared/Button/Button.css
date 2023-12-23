@@ -1,0 +1,35 @@
+/* button styles taken from Topia site */
+.btn { 
+  font-size: 18px;
+  line-height: 8px;
+  border-radius: 12px;
+  border: var(--topia-blue);
+  font-weight: 600;
+  padding: 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transform-style: preserve-3d;
+  transition-timing-function: ease-in-out,ease-in-out;
+  transform: scaleZ(1.01);
+}
+
+.btn:hover {
+  transform: scale3d(0.95, 0.95, 1.01);
+}
+
+.primary-btn {
+  color: var(--topia-ivory);
+  background-color: var(--topia-blue);
+}
+
+.primary-btn:hover {
+  color: var(--topia-white);
+  background-color: var(--topia-black);
+}
+
+.secondary-btn {
+  color: var(--topia-blue);
+  background-color: transparent;
+  border: 1px solid var(--topia-blue);
+  margin-left: 20px;
+}

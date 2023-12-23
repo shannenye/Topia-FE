@@ -49,3 +49,20 @@ export const USER_LIST = {
     y: 1200,
   },
 };
+
+export const TABLE_HEADERS = { // key = corresponding column to map to, value = column name
+  username: 'username',
+  distance: 'distance (px)',
+  isBroadcaster: 'broadcaster'
+};
+
+export const GENERIC_FORM_STATE = {
+  positionX: 800, 
+  positionY: 400, 
+  screenWidth: 0, 
+  screenHeight: 0
+};
+
+export const FORM_ERRORS = {
+  required: 'Please fill out the required field.'
+};

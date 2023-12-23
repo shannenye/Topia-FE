@@ -11,3 +11,92 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* color variables used throughout the project. Hex codes taken from Topia site */
+:root {
+  --topia-blue: #4457ff;
+  --topia-ivory: #e8ebfe;
+  --topia-white: #fff;
+  --topia-black: #0b0a33;
+  --topia-light-blue: rgba(82,168,236,.8);
+  --topia-gray: #cbd6e2;
+  --topia-smoke: #f5f8fa;
+  --topia-purple: #e1e2fd;
+  --topia-red: #ff6667;
+}
+
+form {
+  font-size: 17px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 4px;
+  color: var(--topia-black);
+}
+
+/* --------------------------------------- */
+/* Default styles for inputs across browswers */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/* --------------------------------------- */
+
+input {
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  padding: 0 15px;
+  height: 40px;
+  border: 1px solid var(--topia-gray);
+  line-height: 22px;
+  color: #33475b;
+  border-radius: 3px;
+  background-color: var(--topia-smoke);
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--topia-light-blue);
+}
+
+input.error:focus {
+  border: 1px solid var(--topia-red);
+}
+
+label.required:after {
+  content: "*";
+  color: red;
+  margin-left: 2px;
+}
+
+/* Generic table styles for all future tables */
+table {
+  padding: 15px 0;
+  border-collapse: separate;
+}
+
+thead {
+  text-transform: uppercase;
+  color: var(--topia-blue);
+}
+
+tr :not(th) {
+  border-top: 1px solid var(--topia-smoke);
+}
+
+tr th {
+  padding: 15px 5px;
+}
+
+tr td {
+  padding: 15px 0;
+}
